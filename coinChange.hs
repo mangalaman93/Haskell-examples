@@ -1,10 +1,10 @@
 -- coinChange: function to calculate number of possible
---				combination of coins to get value x
+-- combination of coins to get value x
 -- *Main> coinChange 111 [5, 7, 56]
 -- 5
 --
 -- minCoinChange: gives the minimum possible coin combination
--- 				  return type: [(number of coins, denomination)]
+-- return type: [(number of coins, denomination)]
 -- *Main> minCoinChange 111 [5, 7, 56]
 -- [(4,5),(5,7),(1,56),(0,0)]
 
@@ -31,7 +31,7 @@ myMin (one:list_of_list_of_tuples) =
 			  	else two
 			)
 		)
-	)
+)
 
 mySum (tuple:[]) = fst tuple
 mySum (tuple:list_of_tuples) = 
@@ -49,3 +49,4 @@ minCoinChange x l =
 		then (error "Not possible to find min coins")
 		else temp
 	)
+

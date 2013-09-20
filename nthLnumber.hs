@@ -17,3 +17,4 @@ findJustBigger num (one:two:[]) = if num >= two then one else two
 findJustBigger num (one:two:list_of_lnumbers) = if num >= two then one else (findJustBigger num (two:list_of_lnumbers))
 
 -- credits for algorithm: Piyush Kumar
+
